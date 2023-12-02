@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Currency Conversion</title>
+</head>
+<body>
+    {% if error %}
+        <p>{{error}}</p>
+    {% endif %}
+    <form method="POST">
+        {{form.hidden_tag()}}
+        {{form.amount}}
+        {{form.currency1()}}
+        {{form.currency2()}}
+        {{form.submit()}}
+    </form>
+    {% if converted_data %}
+        <p>{{converted_data.amount}} {{converted_data.currency1}} is
+            {{converted_data.converted_amount}} {{converted_data.currency2}}</p>
+    {% endif %}
+</body>
+</html>
