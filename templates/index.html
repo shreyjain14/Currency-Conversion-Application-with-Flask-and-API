@@ -15,7 +15,9 @@
     <form method="POST">
         {{form.hidden_tag()}}
         {{form.amount}}<br><br>
+        <label>From:</label><br>
         {{form.currency1()}}<br><br>
+        <label>To:</label><br>
         {{form.currency2()}}<br><br>
         {{form.submit()}}
     </form>

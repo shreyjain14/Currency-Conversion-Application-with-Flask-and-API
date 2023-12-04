@@ -20,4 +20,4 @@ def get_currencies():
 
 if __name__ == '__main__':
     get_currencies()
-    convert_currency(10, 'USD', 'INR')
+    convert_currency(1, 'USD', 'INR')
