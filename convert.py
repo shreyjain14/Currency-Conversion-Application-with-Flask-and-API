@@ -14,7 +14,6 @@ def get_currencies():
     currencies = []
     for currency in result:
         currencies.append(currency + " - " + result[currency])
-    print(currencies)
     return currencies
 
 

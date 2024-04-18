@@ -21,7 +21,7 @@ class CurrencyConvert(FlaskForm):
     submit = SubmitField('Convert')
 
 
-@app.route('/', methods=['GET',"POST"])
+@app.route('/', methods=['GET', "POST"])
 def home():
     form = CurrencyConvert()
     if form.validate_on_submit():
