@@ -8,4 +8,4 @@ RUN pip install --upgrade pip wheel
 RUN pip install -r requirements.txt
 COPY . /workdir/
 
-CMD ["gunicorn", "--bind", "0.0.0.0:5000", "app:app()"]
+CMD ["python", "-m", "flask", "run", "--host=0.0.0.0", "--port=5000"]
